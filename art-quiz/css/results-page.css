@@ -1,0 +1,178 @@
+.round-card {
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+  line-height: 10vw;
+  height: 10vw;
+  color: var(--font-subtext-color-2-opacity-2);
+  background-color: var(--font-subtext-color-2-opacity);
+  border-radius: 0 var(--card-border-radius);
+  overflow: hidden;
+  user-select: none;
+}
+
+.round-card-played {
+  background-color: var(--font-color-menu-item-opacity-2);
+}
+
+.round-num-info {
+  padding-left: 20px;
+  height: 100%;
+  line-height: 10vw;
+  position: absolute;
+  left: 0;
+  font-size: 15vw;
+  letter-spacing: 2px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.round-icon {
+  width: 12vw;
+  height: 12vw;
+  position: absolute;
+  right: 20%;
+  background-color: var(--font-subtext-color-2-opacity-2);
+  -webkit-mask-size: 12vw;
+  -webkit-mask-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.round-card-played .round-num-info {
+  color: var(--font-color-menu-item-opacity-3);
+}
+
+.round-card-played .round-icon {
+  background-color: var(--font-color-menu-item-opacity-3);
+}
+
+.round-result-info {
+  width: 8vw;
+  height: 8vw;
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  font-size: 2vw;
+  line-height: 8vw;
+  color: var(--font-color-menu-item-opacity);
+  background-color: var(--font-subtext-color-2-opacity-2);
+  border-radius: 0 var(--card-border-radius);
+}
+
+.round-card-icon-good-result {
+  background-color: var(--good-result-color);
+}
+
+.round-card-icon-medium-result {
+  background-color: var(--medium-result-color);
+}
+
+.round-card-icon-bad-result {
+  background-color: var(--bad-result-color);
+}
+
+.artists-round-icon {
+  top: -1.2vw;
+  -webkit-mask-image: url(../assets/icons/artist.svg);
+}
+
+.paintings-round-icon {
+  top: 1vw;
+  -webkit-mask-image: url(../assets/icons/painting.svg);
+}
+
+.round-gallery-title {
+  margin: 20px;
+}
+
+.round-gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 25px;
+}
+
+.round-gallery-list-item {
+  width: 20vw;
+  max-width: 150px;
+  position: relative;
+  font-size: 0;
+}
+
+.round-gallery-list-item-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.round-gallery-list-item-img-correct {
+  box-shadow: 0px 0px 0px 3px var(--correct-color);
+}
+
+.round-gallery-list-item-img-incorrect {
+  filter: grayscale(100%);
+  box-shadow: 0px 0px 0px 3px var(--incorrect-color);
+}
+
+.round-gallery-list-item-img:hover ~ .painting-info-popup {
+  opacity: 1;
+}
+
+.painting-info-popup {
+  margin-top: 10px;
+  padding: 10px;
+  width: 150%;
+  position: absolute;
+  font-size: 0.75rem;
+  color: var(--font-color-menu-item-opacity);
+  background-color: var(--font-subtext-color-2);
+  border-radius: 1rem;
+  transform: translateX(-15%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.painting-info-name {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1000px) {
+  .main-container .round-card {
+    line-height: 100px;
+    height: 100px;
+  }
+
+  .round-card .round-num-info {
+    line-height: 100px;
+    font-size: 170px;
+  }
+
+  .round-card .round-icon {  
+    width: 120px;
+    height: 120px;
+    -webkit-mask-size: 120px;
+  }
+
+  .round-card .round-result-info {
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    right: 10px;
+    font-size: 1.25rem;
+    line-height: 80px;
+  }
+
+  .round-card .artists-round-icon {
+    top: -12px;
+  }
+  
+  .round-card .paintings-round-icon {
+    top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .round-card,
+  .round-result-info {
+    border-radius: 0 var(--card-border-radius-2);
+  }
+}

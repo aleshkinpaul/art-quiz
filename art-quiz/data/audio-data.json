@@ -1,0 +1,17 @@
+{
+    "tap": {
+            "src": "./assets/audio/tap.mp3"
+        },
+    "right-answer": {
+            "src": "./assets/audio/right-answer.mp3"
+        },
+    "wrong-answer": {
+            "src": "./assets/audio/wrong-answer.mp3"
+        },
+    "fail": {
+            "src": "./assets/audio/fail.mp3"
+        },
+    "finish-round": {
+            "src": "./assets/audio/finish-round.mp3"
+        }
+}

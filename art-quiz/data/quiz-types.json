@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "src": "./assets/images/artist.jpg",
+            "name": "Художники",
+            "id": "artists"
+        },
+        {
+            "src": "./assets/images/painting.jpg",
+            "name": "Картины",
+            "id": "paintings"
+        }
+    ]
+}

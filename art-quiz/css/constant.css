@@ -1,0 +1,26 @@
+:root {
+  --font-color: #F2785C;
+  --font-color-2: #A49888;
+  --font-color-3: #FAE3CE;
+  --font-subtext-color:#733620;
+  --font-subtext-color-2: #30698C;
+  --font-subtext-color-2-opacity: rgba(	48, 105, 140, 0.4);
+  --font-subtext-color-2-opacity-2: rgba(	48, 105, 140, 0.6);
+  --font-color-menu-item-opacity: rgba(	255, 255, 255, 0.6);
+  --font-color-menu-item-opacity-2: rgba(0, 0, 0, 0.1);
+  --font-color-menu-item-opacity-3: rgba(0, 0, 0, 0.2);
+  --correct-color: rgb(42, 155, 93);
+  --incorrect-color: rgb(185, 57, 40);
+  --good-result-color: rgba(16, 99, 0, 0.4);
+  --medium-result-color: rgba(182, 185, 0, 0.4);
+  --bad-result-color: rgba(255, 0, 0, 0.4);
+  --overlay-color: #F2B885;
+  --font-color-menu-item: #FFFFFF;
+  --page-width: 80vw;
+  --max-width: 600px;
+  --opacity-40: 0.4;
+  --max-question-option-height: 30px;
+  --font-size-menu-item: 3rem;
+  --card-border-radius: 1rem;
+  --card-border-radius-2: 0.5rem;
+}
